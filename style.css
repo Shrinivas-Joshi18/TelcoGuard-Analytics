@@ -1,0 +1,51 @@
+/* Define colors using CSS variables for a consistent theme */
+:root {
+    --primary-color: #6366F1; /* A nice indigo for buttons and highlights */
+    --background-color: #111827; /* A very dark blue-grey for the main background */
+    --container-background-color: #1F2937; /* A lighter dark blue-grey for cards/containers */
+    --sidebar-background-color: #111827; /* Same as main background for a seamless look */
+    --text-color: #F9FAFB; /* A bright, off-white for main text */
+    --subtle-text-color: #9CA3AF; /* A light grey for less important text */
+    --border-color: #374151; /* A subtle border color for containers */
+}
+
+/* Apply the background color to the main app area */
+[data-testid="stAppViewContainer"] {
+    background-color: var(--background-color);
+}
+
+/* Style the sidebar */
+[data-testid="stSidebar"] {
+    background-color: var(--sidebar-background-color);
+    border-right: 1px solid var(--border-color);
+}
+
+/* Style the main results container as a "card" */
+.result-card {
+    background-color: var(--container-background-color);
+    border-radius: 1rem; /* 16px */
+    padding: 2rem; /* 32px */
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Style the main title */
+h1 {
+    color: var(--text-color);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Style the button */
+.stButton button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 0.5rem; /* 8px */
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Style the metric widget */
+[data-testid="stMetric"] {
+    background-color: transparent;
+}
