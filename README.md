@@ -37,3 +37,10 @@ Screenshot of the TelcoGuard App <img width="1918" height="1011" alt="telco img"
 - Streamlit
 - Joblib
 - Git & GitHub
+
+## 💾 Data
+
+The dataset used for this project is a large file and is not included in this repository. You can download it from its original source.
+
+* **Source:** Paysim Financial Transaction Data
+* **Download Link:** [Click here to download from Kaggle](https://www.kaggle.com/datasets/ealaxi/paysim1)
